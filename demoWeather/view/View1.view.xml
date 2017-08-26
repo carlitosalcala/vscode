@@ -1,0 +1,43 @@
+<View
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	controllerName="demo.weather.controller.View1">
+	<Page
+		title="Datos">
+		<content>
+			<ObjectHeader iconActive="false" id="__header0" intro="{/city}" introActive="true" number="" numberUnit="" title="{/country}"
+				titleActive="true"/>
+			<layout:VerticalLayout>
+				<Button text="Ver grafica" press="onToPage2"/>
+
+			</layout:VerticalLayout>						
+					<Table columns="{/cols}" id="__table0" items="{/items}" itemPress="rowSelectionChanged" cellContextmenu="OnClick">
+						<customData>
+							<sap.ui.core:CustomData id="__data2" key="sap-ui-fastnavgroup" value="true" writeToDom="true" xmlns:sap.ui.core="sap.ui.core"/>
+						</customData>
+						<items>
+							<ColumnListItem counter="0" id="__item0" type="Navigation">
+								<cells>
+									<Text maxLines="0" text="{date}"/>
+									<Text maxLines="0" text="{temp}"/>
+									<Text maxLines="0" text="{temp_min}"/>
+									<Text maxLines="0" text="{temp_max}"/>									
+									<Text maxLines="0" text="{temp_night}"/>
+									<Text maxLines="0" text="{temp_eve}"/>
+									<Text maxLines="0" text="{temp_morn}"/>
+									<Text maxLines="0" text="{units}"/>
+									<Text maxLines="0" text="{humidity}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+						<columns>
+							<Column>
+								<header>
+									<Label text="{name}"/>
+								</header>
+							</Column>
+						</columns>
+					</Table>		
+		</content>
+	</Page>
+</View>
