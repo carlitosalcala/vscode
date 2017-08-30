@@ -3,7 +3,7 @@
     xmlns:mvc="sap.ui.core.mvc" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
     xmlns:viz.data="sap.viz.ui5.data" height="100%">
     <layout:FixFlex id='chartFixFlex' minFlexSize="250">
-        <!--Below is the setting panel -->
+        <!--Below is the setting panel // rama testing iniciada -->
         <layout:fixContent>
             <Panel id='settingsPanel' class="panelStyle" expandable="true" expanded="true" headerText="Settings" width="auto">   
                 <content>
